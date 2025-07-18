@@ -1,10 +1,10 @@
 "use client"
 
-import type { Element } from "@/lib/types"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import type { Element } from "~/lib/types"
+import { Input } from "~/components/ui/input"
+import { Label } from "~/components/ui/label"
+import { Slider } from "~/components/ui/slider"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select"
 
 interface ShapePropertyPanelProps {
   element: Element

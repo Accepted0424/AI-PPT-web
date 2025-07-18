@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import type { Element } from "@/lib/types"
-import { Button } from "@/components/ui/button"
+import type { Element } from "~/lib/types"
+import { Button } from "~/components/ui/button"
 import {
   Bold,
   AlignLeft,
@@ -16,8 +16,8 @@ import {
   Save,
   Plus,
 } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { cn } from "@/lib/utils"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "~/components/ui/dropdown-menu"
+import { cn } from "~/lib/utils"
 import TitleEditor from "./title-editor"
 
 interface ToolbarProps {
@@ -137,11 +137,11 @@ export default function Toolbar({
         </div>
 
         <div className="flex items-center space-x-1">
-          <Button size="sm" variant="outline"><a href="https://flowmix.turntip.cn/flow" target={'_blank'}>flowmix/flow多模态工作流</a></Button>
-          <Button size="sm" variant="outline"><a href="https://dooring.vip" target={'_blank'}>H5-Dooring可视化搭建</a></Button>
-          <Button size="sm"><a href="https://flowmix.turntip.cn" target={'_blank'}>flowmix/docx多模态文档</a></Button>
-          <Button size="sm"><a href="https://mindlink.turntip.cn" target={'_blank'}>灵语AI文档</a></Button>
-          <Button size="sm"><a href="https://github.com/MrXujiang/pptx" target={'_blank'}>Github</a></Button>
+          <Button size="sm" variant="outline"><a href="https://flowmix.turntip.cn/flow" target={'_blank'} rel="noreferrer">flowmix/flow多模态工作流</a></Button>
+          <Button size="sm" variant="outline"><a href="https://dooring.vip" target={'_blank'} rel="noreferrer">H5-Dooring可视化搭建</a></Button>
+          <Button size="sm"><a href="https://flowmix.turntip.cn" target={'_blank'} rel="noreferrer">flowmix/docx多模态文档</a></Button>
+          <Button size="sm"><a href="https://mindlink.turntip.cn" target={'_blank'} rel="noreferrer">灵语AI文档</a></Button>
+          <Button size="sm"><a href="https://github.com/MrXujiang/pptx" target={'_blank'} rel="noreferrer">Github</a></Button>
         </div>
       </div>
 

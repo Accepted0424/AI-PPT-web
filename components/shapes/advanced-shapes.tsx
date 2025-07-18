@@ -1,6 +1,6 @@
 "use client"
 
-import type { Element } from "@/lib/types"
+import type { Element } from "~/lib/types"
 
 interface ShapeProps {
   element: Element

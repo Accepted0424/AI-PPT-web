@@ -1,12 +1,12 @@
 "use client"
 
-import type { Element } from "@/lib/types"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Button } from "@/components/ui/button"
-import { Slider } from "@/components/ui/slider"
-import { Switch } from "@/components/ui/switch"
+import type { Element } from "~/lib/types"
+import { Input } from "~/components/ui/input"
+import { Label } from "~/components/ui/label"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select"
+import { Button } from "~/components/ui/button"
+import { Slider } from "~/components/ui/slider"
+import { Switch } from "~/components/ui/switch"
 import {
   BarChart,
   LineChart,
@@ -15,8 +15,8 @@ import {
   ScatterChartIcon as RadarChart,
   AreaChart,
 } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { cn } from "~/lib/utils"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
 
 interface ChartPropertyPanelProps {
   element: Element

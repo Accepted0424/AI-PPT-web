@@ -3,9 +3,9 @@
 import type React from "react"
 
 import { useEffect, useRef, useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "ponents/ui/button"
 import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight, List, ListOrdered } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "~/lib/utils"
 
 interface RichTextEditorProps {
   initialValue: string

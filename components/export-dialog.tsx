@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "~/components/ui/dialog"
+import { Button } from "~/components/ui/button"
+import { Input } from "~/components/ui/input"
+import { Label } from "~/components/ui/label"
 import { Download, Loader2 } from "lucide-react"
-import type { Slide, SlideSize } from "@/lib/types"
-import { exportToPPT } from "@/lib/export-ppt"
+import type { Slide, SlideSize } from "~/lib/types"
+import { exportToPPT } from "~/lib/export-ppt"
 
 interface ExportDialogProps {
   slides: Slide[]

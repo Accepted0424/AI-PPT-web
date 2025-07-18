@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import type { Slide, SlideSize } from "@/lib/types"
-import { Button } from "@/components/ui/button"
+import type { Slide, SlideSize } from "~/lib/types"
+import { Button } from "~/components/ui/button"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
 interface SlidePreviewProps {

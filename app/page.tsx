@@ -1,19 +1,20 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import Sidebar from "@/components/sidebar"
-import Toolbar from "@/components/toolbar"
-import SlideEditor from "@/components/slide-editor"
-import SlidePreview from "@/components/slide-preview"
-import SettingsDialog from "@/components/settings-dialog"
-import PropertyPanel from "@/components/property-panel/property-panel"
-import EditorLayout from "@/components/layout/editor-layout"
-import ImageUploadDialog from "@/components/image-upload-dialog"
-import ExportDialog from "@/components/export-dialog"
-import BackgroundSettingsDialog from "@/components/background-settings-dialog"
-import { type Slide, type Element, defaultSlides, defaultSlideSize, type SlideSize, type Background } from "@/lib/types"
-import { Button } from "@/components/ui/button"
+import Sidebar from "~/components/sidebar"
+import Toolbar from "~/components/toolbar"
+import SlideEditor from "~/components/slide-editor"
+import SlidePreview from "~/components/slide-preview"
+import SettingsDialog from "~/components/settings-dialog"
+import PropertyPanel from "~/components/property-panel/property-panel"
+import EditorLayout from "~/components/layout/editor-layout"
+import ImageUploadDialog from "~/components/image-upload-dialog"
+import ExportDialog from "~/components/export-dialog"
+import BackgroundSettingsDialog from "~/components/background-settings-dialog"
+import { type Slide, type Element, defaultSlides, defaultSlideSize, type SlideSize, type Background } from "~/lib/types"
+import { Button } from "~/components/ui/button"
 import { Play, PanelRight } from "lucide-react"
+import ChatBox from "~/components/chat/chat-box"
 
 export default function Home() {
   const [slides, setSlides] = useState<Slide[]>(defaultSlides)
@@ -490,6 +491,7 @@ export default function Home() {
                   onMoveElementToBack={handleMoveElementToBack}
                 />
               }
+              chatBox={ <ChatBox /> }
               showPropertyPanel={showPropertyPanel}
             />
           </div>

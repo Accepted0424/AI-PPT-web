@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import type { Slide } from "@/lib/types"
-import { Button } from "@/components/ui/button"
+import type { Slide } from "~/lib/types"
+import { Button } from "~/components/ui/button"
 import { Plus } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "~/lib/utils"
 
 interface SidebarProps {
   slides: Slide[]

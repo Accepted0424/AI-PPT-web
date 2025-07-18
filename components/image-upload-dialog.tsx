@@ -3,10 +3,10 @@
 import type React from "react"
 
 import { useState, useRef } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "~/components/ui/dialog"
+import { Button } from "~/components/ui/button"
 import { Image, Upload, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "~/lib/utils"
 
 interface ImageUploadDialogProps {
   onImageSelect: (imageUrl: string) => void

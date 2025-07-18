@@ -1,9 +1,9 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import { Button } from "~/components/ui/button"
+import { Separator } from "~/components/ui/separator"
 import { MoveUp, MoveDown, ArrowUpToLine, ArrowDownToLine } from "lucide-react"
-import type { Element, Slide } from "@/lib/types"
+import type { Element, Slide } from "~/lib/types"
 
 interface LayerPropertyPanelProps {
   element: Element

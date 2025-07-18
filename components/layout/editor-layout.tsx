@@ -1,17 +1,18 @@
 "use client"
 
 import { useState, type ReactNode } from "react"
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
-import { cn } from "@/lib/utils"
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "~/components/ui/resizable"
+import { cn } from "~/lib/utils"
 
 interface EditorLayoutProps {
-  sidebar: ReactNode
-  editor: ReactNode
-  propertyPanel: ReactNode
+  sidebar: ReactNode;
+  editor: ReactNode;
+  propertyPanel: ReactNode;
+  chatBox: ReactNode;
   showPropertyPanel: boolean
 }
 
-export default function EditorLayout({ sidebar, editor, propertyPanel, showPropertyPanel }: EditorLayoutProps) {
+export default function EditorLayout({ sidebar, editor, propertyPanel, chatBox, showPropertyPanel }: EditorLayoutProps) {
   const [isCollapsed, setIsCollapsed] = useState(false)
 
   return (
@@ -45,6 +46,12 @@ export default function EditorLayout({ sidebar, editor, propertyPanel, showPrope
           </ResizablePanel>
         </>
       )}
+      <>
+        <ResizableHandle withHandle />
+        <ResizablePanel>
+          {chatBox}
+        </ResizablePanel>
+      </>
     </ResizablePanelGroup>
   )
 }

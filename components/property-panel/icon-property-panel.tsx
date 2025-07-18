@@ -1,13 +1,13 @@
 "use client"
 
-import type { Element } from "@/lib/types"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
+import type { Element } from "~/lib/types"
+import { Input } from "~/components/ui/input"
+import { Label } from "~/components/ui/label"
+import { Slider } from "~/components/ui/slider"
 import * as LucideIcons from "lucide-react"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { ScrollArea } from "~/components/ui/scroll-area"
+import { Button } from "~/components/ui/button"
+import { cn } from "~/lib/utils"
 
 interface IconPropertyPanelProps {
   element: Element

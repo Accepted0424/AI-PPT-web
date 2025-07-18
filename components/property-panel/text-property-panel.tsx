@@ -1,12 +1,12 @@
 "use client"
 
-import type { Element } from "@/lib/types"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
-import { Button } from "@/components/ui/button"
+import type { Element } from "~/lib/types"
+import { Input } from "~/components/ui/input"
+import { Label } from "~/components/ui/label"
+import { Slider } from "~/components/ui/slider"
+import { Button } from "~/components/ui/button"
 import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { cn } from "~/lib/utils"
 
 interface TextPropertyPanelProps {
   element: Element

@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import type { Element, Slide } from "@/lib/types"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import type { Element, Slide } from "~/lib/types"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
+import { ScrollArea } from "~/components/ui/scroll-area"
 import TextPropertyPanel from "./text-property-panel"
 import ShapePropertyPanel from "./shape-property-panel"
 import TablePropertyPanel from "./table-property-panel"
@@ -12,7 +12,7 @@ import ImagePropertyPanel from "./image-property-panel"
 import IconPropertyPanel from "./icon-property-panel"
 import LayerPropertyPanel from "./layer-property-panel"
 import { X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "~/components/ui/button"
 import TransformPropertyPanel from "./transform-property-panel"
 
 interface PropertyPanelProps {

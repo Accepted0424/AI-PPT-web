@@ -8,8 +8,8 @@ import {
   ContextMenuSeparator,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from "@/components/ui/context-menu"
-import type { Element } from "@/lib/types"
+} from "~/components/ui/context-menu"
+import type { Element } from "~/lib/types"
 import { Copy, Trash, MoveUp, MoveDown, Edit, Lock, Unlock } from "lucide-react"
 
 interface ElementContextMenuProps {
